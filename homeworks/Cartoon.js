@@ -47,12 +47,21 @@ ctx.stroke();
 //pokemon box
 ctx.beginPath();
 ctx.rect(0,0,400,150);
+ctx.fillStyle="black";
+ctx.font="36px Arial";
+ctx.textAlign="center";
+ctx.fillText("Rival",200,75)
 ctx.rect(50,100,300,20);
 ctx.stroke();
 
 ctx.beginPath();
 ctx.rect(400,450,400,150);
+ctx.fillStyle="black";
+ctx.font="36px Arial";
+ctx.textAlign="center";
+ctx.fillText("Oshawott",600,525);
 ctx.rect(450,550,300,20);
 ctx.fillStyle="green";
-ctx.fillRect(450,550,275,20);
+ctx.fillRect(450,550,250,20);
 ctx.stroke();
+
