@@ -85,6 +85,8 @@ ctx.font="36px Arial";
 ctx.textAlign="center";
 ctx.fillText("Rival",200,75)
 ctx.rect(50,100,300,20);
+ctx.font="16px Arial";
+ctx.fillText("FNT",375,115)
 ctx.stroke();
 
 ctx.beginPath();
@@ -102,12 +104,13 @@ ctx.stroke();
 
 ctx.beginPath();
 ctx.fillStyle="white";
-ctx.rect(0,500,400,150);
+ctx.rect(0,500,400,100);
 ctx.fill();
 ctx.fillStyle="black";
 ctx.font="16px Arial";
 ctx.textAlign="center";
-ctx.fillText("Caption: A pokemon battle occuring in the neighborhood ",200,575)
+ctx.fillText("Caption:",200,550)
+ctx.fillText(" A pokemon battle occuring in the neighborhood ",200,575)
 ctx.stroke();
 
 //tv + tv stand
