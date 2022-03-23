@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+</head>
+<body onload="load()">
+    <a href="../index.html">Home page</a>
+    <br>
+    <form  method="get">
+        <label></label>
+        <input type="text" id="Titles" placeholder="Title" oninput="saveTitle()" size="40">
+        <label></label>
+        <textarea id="Notes" rows="10" cols="80" placeholder="Notes" oninput="saveText()"></textarea>
+        <button onclick="window.localStorage.clear()">Clear</button>
+    </form>
+    <script>
+        function saveText(){
+            localStorage.setItem("Note",document.getElementById("Notes").value);
+        }
+        function saveTitle(){
+            localStorage.setItem("title",document.getElementById("Titles").value);
+        }
+        function loadText(){
+           document.getElementById("Notes").innerHTML=localStorage.getItem("Note"); 
+        }
+        function loadTitle(){
+           document.getElementById("Titles").innerHTML=localStorage.getItem("title"); 
+        }
+        function load(){
+            loadTitle();
+            loadText();
+        }
+    </script>
+</body>
+</html>
