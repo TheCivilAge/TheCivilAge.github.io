@@ -1,0 +1,159 @@
+<html>
+<head>
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+       .navbar-dark {
+            position:fixed;
+            top:0;
+            width: 100%;
+            z-index: 5;
+       }
+        @media only screen and (min-width: 800px) {
+            .navbar-toggler{
+                display: none;
+            }
+   
+        }
+        @media only screen and (max-width: 800px) {
+            #nav-buttons{
+                display: none;
+            }
+        }
+       .scrollspy-custom{
+           position:relative;
+           height: 100vh;
+           width: 100vw;
+       }
+       .content{
+            width: 80%; /* Can be in percentage also. */
+            height: auto;
+            margin: auto;
+            padding: 10px;
+            position: absolute;
+            border: 1px solid black;
+            top:10%;
+            left: 10%;          
+            text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Home</a>
+            <div id="nav-buttons">
+                <a href="#scrollspyHeading1"><button type="button" class="btn btn-primary btn-sm">Contact Info</button></a>
+                <a href="#scrollspyHeading2"><button type="button" class="btn btn-primary btn-sm">Summary</button></a>
+                <a href="#scrollspyHeading3"><button type="button" class="btn btn-primary btn-sm">Education</button></a>
+                <a href="#scrollspyHeading4"><button type="button" class="btn btn-primary btn-sm">Skills</button></a>
+                <a href="#scrollspyHeading5"><button type="button" class="btn btn-primary btn-sm">Experience</button></a>
+                <a href="#scrollspyHeading6"><button type="button" class="btn btn-primary btn-sm">Projects</button></a>
+                <a href="#scrollspyHeading7"><button type="button" class="btn btn-primary btn-sm">Activites & Honors</button></a>
+
+
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02" >
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading1">Contact Info</a>                
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#scrollspyHeading2">Summary</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading3">Education</a>  
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading4">Skills</a>  
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading5">Experience</a>  
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading6">Projects</a>  
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading7">Activites & Honors</a>  
+                </li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+    <div >
+        <div id="scrollspyHeading1"class="scrollspy-custom">
+            <div class="content">
+                <h4>Contact Info</h4>
+                <dl class="row"style="margin-left:20%;">
+                    <dt class="col-sm-3">Name</dt>
+                    <dd class="col-sm-9">Katya Civil</dd>
+                  
+                    <dt class="col-sm-3">Phone Number</dt>
+                    <dd class="col-sm-9">
+                      <p>Cell phone: 1-(347)-356-9399</p>
+                    </dd>
+                  
+                    <dt class="col-sm-3">Work Email</dt>
+                    <dd class="col-sm-9">TheCivilAge@gmail.com</dd>
+    
+                    <dt class="col-sm-3">Linkedin</dt>
+                    <dd class="col-sm-9"></dd>
+                   
+                  </dl>
+            </div>
+        </div>
+        <div id="scrollspyHeading2" class="scrollspy-custom ">
+            <div class="content">
+                <h4 >Summary</h4><br>
+                <p> Current senior at Brooklyn college looking for entry positions and internships. Interested in fields such as data science, web development and software engineering.</p>    
+            </div>
+            </div>
+        <div id="scrollspyHeading3" class="scrollspy-custom ">
+            <div class="content">
+                <h4>Education</h4>
+                <h5>Brooklyn College</h5>
+                <p>Computer Science BS Expected Graduation Fall 2022</p>
+            </div>
+        </div>
+        <div id="scrollspyHeading4" class="scrollspy-custom ">
+            <div class="content">
+                <h4> Skills</h4>
+                <p>Html, Javascript</p>
+            </div>
+        </div>
+        <div id="scrollspyHeading5" class="scrollspy-custom">
+            <div class="content">
+                <h4 >Bitly Wintern 2020</h4>
+                <p>...</p>
+                <a href="#">Bitly winterns 2020 project</a>
+            </div>
+
+        </div>
+        <div id="scrollspyHeading6" class="scrollspy-custom">
+            <div class="content">
+                <h4>Projects</h4>
+                <div class="carousel-item">
+                    <img src="..." alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>...</h5>
+                      <p>...</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div id="scrollspyHeading7" class="scrollspy-custom" >
+            <div class="content">  
+                <h4> Activites & Honors</h4>
+                <p> N/A</p>
+            </div>
+        </div>
+      </div> 
+</body>
+</html>
