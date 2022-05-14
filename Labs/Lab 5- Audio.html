@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+
+    </head>
+    <body>
+        <a href="../index.html">Homepage</a>
+        <audio id="sponge-chase">
+            <source src="Audio/spongebob-music_-grass-skirt-chase-1.mp3" type="audio/mpeg"> </audio>
+       
+        <audio id="sponge-meme">
+            <source src="Audio/spongebob-levitating-meme.mp3" type="audio/mpeg"> </audio>
+        <audio id="sponge-how-are-ya">
+            <source src="Audio/spongebob-hi-how-are-ya-.mp3" type="audio/mpeg"> </audio>
+        <audio id="sponge-censor">
+            <source src="Audio/spongebob-dolphin-censor.mp3" type="audio/mpeg"> </audio>
+        <audio id="sponge-album">
+            <source src="Audio/spongebob-squarepants-the-yellow-album-21-electric-zoo-audiotrimmer.mp3" type="audio/mpeg"> </audio>
+        
+        <div style="width: 80w; margin: 20%; border: 1px solid black">
+            <button onclick="playAudio('sponge-chase')" type="button">
+                spongebob-chase
+            </button>
+            <button onclick="playAudio('sponge-meme')" type="button">
+                spongebob-meme-sound
+            </button>
+            <button onclick="playAudio('sponge-how-are-ya')" type="button">
+                spongebob-hi-how-are-ya
+            </button>
+            <button onclick="playAudio('sponge-censor')" type="button">
+                spongebob-censor
+            </button>
+            <button onclick="playAudio('sponge-album')" type="button">
+                spongebob-album
+            </button>
+            <button onclick="pauseAudio()">
+                Pause
+            </button>
+        </div>
+        <script>
+            let c="";
+
+            function playAudio(audio) {
+                var a=document.getElementById(audio);
+                a.play();
+                c=audio;
+                console.log(c);
+            }
+            function pauseAudio(){
+                var b=document.getElementById(c)
+                b.pause()
+            }
+        </script>
+    </body>
+</html>
