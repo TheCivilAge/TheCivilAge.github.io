@@ -23,11 +23,11 @@
         }
        .scrollspy-custom{
            position:relative;
-           height: 100vh;
+           height: 90vh;
            width: 100vw;
        }
        .content{
-            width: 80%; /* Can be in percentage also. */
+            width: 80%; 
             height: auto;
             margin: auto;
             padding: 10px;
@@ -128,7 +128,7 @@
                 <p>Html, Javascript</p>
             </div>
         </div>
-        <div id="scrollspyHeading5" class="scrollspy-custom">
+        <div id="scrollspyHeading5" class="scrollspy-custom" style="border: 1px solid black;">
             <div class="content">
                 <h4 >Bitly Wintern 2020</h4>
                 <p>...</p>
@@ -136,18 +136,43 @@
             </div>
 
         </div>
-        <div id="scrollspyHeading6" class="scrollspy-custom">
-            <div class="content">
+        <div id="scrollspyHeading6" class="scrollspy-custom" style="text-align: center; border: 1px solid black;">
+            <h4>Projects</h4>
+            <div style="width: 800px; height: 570px; margin:auto">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="photos/Data visualization Project.PNG" class="d-block w-100" alt="" style="width: auto; height:570;">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="photos/Cartoon project.PNG" class="d-block w-100" alt="Cartton draw in canvas only">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="photos/graph lab.PNG" class="d-block w-100" alt="Graph lab draw in canvas only">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+            
+            <!-- <div class="content">
                 <h4>Projects</h4>
                 <div class="carousel-item">
-                    <img src="..." alt="...">
+                    <img src="photos/Data visualization Project.PNG" alt="Data visualization Project using open data nyc">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>...</h5>
-                      <p>...</p>
+                      <h5>Data visualization Project</h5>
+                      <p>Presenting Data on open data nyc using different types of charts.</p>
                     </div>
                   </div>
             </div>
-        </div>
+        </div> -->
         <div id="scrollspyHeading7" class="scrollspy-custom" >
             <div class="content">  
                 <h4> Activites & Honors</h4>
